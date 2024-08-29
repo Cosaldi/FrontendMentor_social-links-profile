@@ -1,0 +1,68 @@
+.card {
+    max-width: 24.0625rem;
+    padding: 0.875rem;
+    background-color: $grey-800;
+    border-radius: 1rem;
+
+    &__author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+    }
+
+    &__avatar {
+        width: 90px;
+        margin-bottom: 30px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        font-size: $font-l;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin-bottom: 26px;
+        text-align: center;
+    }
+
+    &__city {
+        margin-bottom: 32px;
+        color: $green;
+        font-size: $font-s;
+        font-weight: 600;
+    }
+
+    &__desc {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: $font-s;
+        font-weight: 400;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        &-item {
+            height: 46px;
+            width: 100%;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            background-color: $grey-700;
+            border-radius: 8px;
+            font-size: $font-s;
+            font-weight: 700;
+
+        }
+
+        & a:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+    }
+}
