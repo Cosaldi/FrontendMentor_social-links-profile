@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Inter";
+  src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  letter-spacing: 0.5px;
+}
+@media (max-height: 31.25em) {
+  body {
+    height: 200vh;
+  }
+}
+@media (max-width: 89.9375em) {
+  body {
+    margin-top: 25dvh;
+    margin-bottom: 25dvh;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.main {
+  margin-bottom: 40px;
+}
+
+.card {
+  max-width: 24.0625rem;
+  padding: 0.875rem;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 1rem;
+}
+@media (min-width: 40em) {
+  .card {
+    padding: 2.5rem;
+  }
+}
+.card__author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.card__avatar {
+  width: 90px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+}
+.card__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.card__text {
+  margin-bottom: 26px;
+  text-align: center;
+}
+.card__city {
+  margin-bottom: 32px;
+  color: hsl(75, 94%, 57%);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.card__desc {
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.card__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.card__list-item {
+  height: 46px;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.card__list-item:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+}
+.card__list a:not(:last-child) {
+  margin-bottom: 1rem;
+}/*# sourceMappingURL=style.css.map */
