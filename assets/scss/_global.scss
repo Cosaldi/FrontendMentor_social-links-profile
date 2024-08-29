@@ -15,6 +15,15 @@ body {
     color: $white;
     font-family: "Inter";
     letter-spacing: 0.5px;
+
+    @include landspace(phone) {
+        height: 200vh;
+    }
+
+    @include breakpoints-down(qhd) {
+        margin-top: 25dvh;
+        margin-bottom: 25dvh;
+    }
 }
 
 ul {

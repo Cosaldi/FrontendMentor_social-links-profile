@@ -1,0 +1,28 @@
+// tablet 640px
+// desktop 1024px
+
+// phone 500px;
+
+// qhd 1440px
+
+$screen-up: ("tablet": "40em", "desktop": "64em");
+$screen-down: ("qhd": "89.9375em");
+$landscape: ("phone": "31.25em");
+
+@mixin breakpoints-up($size) {
+    @media (min-width: map-get($screen-up, $size)) {
+        @content
+    }
+}
+
+@mixin breakpoints-down($size) {
+    @media (max-width: map-get($screen-down, $size)) {
+        @content
+    }
+}
+
+@mixin landspace($size) {
+    @media (max-height: map-get($landscape, $size)) {
+        @content
+    }
+}
